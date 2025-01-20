@@ -1,0 +1,67 @@
+
+.steps .step {
+   padding: 15px;
+   border: 1px solid #ccc; /* Default border */
+   background-color: white; /* Default background */
+   transition: background-color 0.3s ease, color 0.3s ease;
+ }
+ 
+ .steps .step-number {
+   font-size: 1.5rem;
+   font-weight: bold;
+ }
+ 
+ .steps .step p {
+   font-size: 1rem;
+   margin: 5px 0 0 0;
+ }
+ 
+ .steps .step.active {
+   background-color: #b22222; /* Red background for the active step */
+   color: white; /* White text for the active step */
+ }
+ 
+ .steps .step.active .step-number {
+   color: white; /* White text for the number */
+ }
+ 
+
+ /*App.js*/
+ .row-wrapper {
+   overflow-x: hidden; /* Prevent scrolling */
+   white-space: nowrap; /* Prevent wrapping of child elements */
+   scroll-behavior: smooth; /* Smooth scrolling */
+   max-width: 100%; /* Ensure it doesn’t exceed the viewport */
+ }
+ 
+ .steps .row {
+   display: flex;
+   justify-content: space-between; /* Spread items evenly */
+   flex-wrap: wrap; /* Allow wrapping to avoid overflow */
+ }
+ 
+ 
+ .steps .step {
+   padding: 15px;
+   width: 232px; /* Fixed width for each step */
+   height: 108px; /* Fixed height for each step */
+   border: 1px solid #ccc;
+   background-color: white;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   text-align: center;
+ }
+ 
+ .steps .step.active {
+   background-color: #b22222; /* Red for active */
+   color: white;
+ }
+ 
+ .steps .step.active .step-number {
+   color: white; /* Ensure step number remains white */
+ }
+
+
+ 

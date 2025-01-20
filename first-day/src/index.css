@@ -1,0 +1,259 @@
+/* CSS Variables */
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
+@font-face {
+  font-family: "DAMN";
+  src: url("./fonts/DAMN.ttf") format("truetype"); /* For .ttf */
+  font-weight: 400;
+  font-style: normal;
+}
+
+:root {
+  --primary-color: #ae3429; /* Example color */
+  --secondary-color: #e2e2e2;
+  --background-color: #ffffff;
+  --font-color: #333333;
+
+  --font-size-sm: 1rem;
+  --font-size-md: 1.2rem;
+  --font-size-lg: 2rem;
+
+  --spacing-sm: 0.5rem;
+  --spacing-md: 1rem;
+  --spacing-lg: 2rem;
+
+  --transition-speed: 0.3s;
+}
+
+/* Reset and base styles */
+body {
+  font-family: Arial, sans-serif;
+  font-size: var(--font-size-md);
+  color: var(--font-color);
+  background-color: var(--background-color);
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0 0 var(--spacing-md);
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Responsive Grid System */
+.container {
+  max-width: 1700px;
+  margin: 0;
+  padding: 0 var(--spacing-md);
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -var(--spacing-md);
+  margin-right: -var(--spacing-md);
+}
+
+.col {
+  padding-left: var(--spacing-md);
+  padding-right: var(--spacing-md);
+  flex: 1 0 100%;
+}
+
+@media (min-width: 768px) {
+  .col-md {
+    flex: 1 0 50%;
+  }
+}
+
+@media (min-width: 1200px) {
+  .col-lg {
+    flex: 1 0 25%;
+  }
+}
+
+/* Header Menu */
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: var(--background-color);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  transition: var(--transition-speed);
+}
+
+header nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: var(--spacing-md);
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: var(--spacing-lg);
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links li {
+  margin: 0;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: var(--font-color);
+  transition: color var(--transition-speed);
+}
+
+.nav-links a:hover {
+  color: var(--primary-color);
+}
+
+/* Button Styles */
+button {
+  padding: var(--spacing-sm) var(--spacing-md);
+  font-size: var(--font-size-md);
+  color: #fff;
+  background-color: var(--primary-color);
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color var(--transition-speed);
+}
+
+.navbar {
+  font-family: inter;
+  font-weight: 500;
+  border: 1px solid var(--secondary-color);
+  margin: 0.8rem;
+}
+
+.navbar-icon {
+  width: 30px;
+  color: var(--primary-color);
+}
+
+.navbar-toggler:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+.nav-link {
+  font-size: 14px;
+}
+
+.nav-item a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.title {
+  font-family: DAMN;
+  font-size: 2rem;
+  font-size: clamp(3rem, 0.6000000000000001rem + 4.5vw, 6rem);
+  line-height: 3rem;
+}
+
+.leftspace{
+  margin: 0.8rem;
+
+}
+/*App.css*/
+.steps {
+  margin-top: clamp(3rem, 0.6000000000000001rem + 4.5vw, 6rem);
+}
+
+.steps-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: nowrap;
+  font-family: DAMN;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+}
+
+.step {
+  flex: 0 0 232px;
+  height: 108px;
+  background-color: var(--background-color);
+  border: 1px solid var(--secondary-color);
+  text-align: center;
+  scroll-snap-align: center;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.step.active {
+  background-color: #d9534f;
+  color: #fff;
+  transform: scale(1.1);
+}
+
+.steps-container::-webkit-scrollbar {
+  display: none;
+}
+
+.counter {
+  color: var(--font-color);
+  opacity: 0.5;
+}
+.upper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 94%;
+}
+.icon-wrap {
+  background-color: var(--primary-color);
+  display: flex;
+  width: 24px;
+  height: 24px;
+  align-items: center;
+  justify-content: center;
+}
+.next-icon {
+  font-size: 7px;
+}
+.lower {
+  margin-top: 10px;
+  color: var(--font-color);
+}
+.all {
+  font-size: var(--font-size-lg);
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: start;
+  margin-left: 20px;
+}
+
+/*Materials*/
+.materials-container-titles {
+  margin-top: 1.3rem;
+  margin-left: 0.5rem;
+}
+
+.materials-container-titles h2 {
+  font-family: inter;
+  font-size: 0.875rem;
+  font-size: clamp(0.875rem, 0.75rem + 0.625vw, 1.5rem);
+}
+
+.materials {
+  border: 1px solid var(--secondary-color);
+  margin: 0.8rem;
+}
