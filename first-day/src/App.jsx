@@ -118,14 +118,44 @@ function App() {
           <div className="upper">
             <h1 className="title">СИЛОВОЙ КАРКАС</h1>
           </div>
-            <h2>Выберите материал, из которого будут составлены стены</h2>
+          <h2>Выберите материал, из которого будут составлены стены</h2>
         </div>
         <div className="materials-container-grid">
+        <div className="materials-single-container">
+            <div className="materials-single">
+              <div className="materials-single-img">
+                <img
+                  src="./images/house1.png"
+                  alt="Brick"
+                  className="img-fluid"
+                />
+              </div>
+            </div>
+            <div className="materials-single-description">
+              <div className="materials-single-text">Блочные</div>
+              <div className="materials-single-type">
+                <label>
+                  <input type="checkbox" name="example" />
+                  Под ключ
+                </label>
+                <label>
+                  <input type="checkbox" name="example" />
+                  Под отделку
+                </label>
+              </div>
+            </div>
+          </div>
           <div className="materials-single-container">
             <div className="materials-single">
               <div className="materials-single-img">
-                <img src="./images/house1.svg" alt="Brick" className="img-fluid" />
+                <img
+                  src="./images/house1.png"
+                  alt="Brick"
+                  className="img-fluid"
+                />
               </div>
+            </div>
+            <div className="materials-single-description">
               <div className="materials-single-text">Блочные</div>
               <div className="materials-single-type">
                 <label>
