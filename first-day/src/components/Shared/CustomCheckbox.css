@@ -1,0 +1,39 @@
+/*checkbox*/
+.custom-checkbox {
+  display: inline-block;
+  cursor: pointer;
+}
+
+.custom-checkbox input {
+  display: none;
+}
+
+.checkbox-box {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border: 2px solid var(--primary-color);
+  border-radius: 4px;
+  position: relative;
+}
+
+.checkbox-box::after {
+  content: "";
+  width: 7px;
+  height: 12px;
+  border: solid var(--primary-color);
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+  position: absolute;
+
+  left: 5px;
+  display: none;
+}
+
+.checkbox-box.checked::after {
+  display: block;
+}
+
+.checkbox-text{
+   margin:clamp(0.25rem, 0.15rem + 0.5vw, 0.75rem) 14px;
+}

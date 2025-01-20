@@ -2,8 +2,11 @@ import "./App.css";
 import Footer from "./components/Footer/Footer";
 import Header from "./components/Header/Header";
 import nextIcon from "/icons/pointer.svg";
+import CustomCheckbox from "./components/Shared/CustomCheckbox";
 
 function App() {
+
+
   return (
     <>
       <Header />
@@ -121,7 +124,7 @@ function App() {
           <h2>Выберите материал, из которого будут составлены стены</h2>
         </div>
         <div className="materials-container-grid">
-        <div className="materials-single-container">
+          <div className="materials-single-container">
             <div className="materials-single">
               <div className="materials-single-img">
                 <img
@@ -132,17 +135,12 @@ function App() {
               </div>
             </div>
             <div className="materials-single-description">
-              <div className="materials-single-text">Блочные</div>
-              <div className="materials-single-type">
-                <label>
-                  <input type="checkbox" name="example" />
-                  Под ключ
-                </label>
-                <label>
-                  <input type="checkbox" name="example" />
-                  Под отделку
-                </label>
+              <div className="materials-single-text">БЛОЧНЫЕ</div>
+              <div className="materials-single-type d-flex flex-column">
+              <CustomCheckbox text="Под ключ" />
+              <CustomCheckbox text="Под отделку" />
               </div>
+              
             </div>
           </div>
           <div className="materials-single-container">
@@ -156,17 +154,12 @@ function App() {
               </div>
             </div>
             <div className="materials-single-description">
-              <div className="materials-single-text">Блочные</div>
-              <div className="materials-single-type">
-                <label>
-                  <input type="checkbox" name="example" />
-                  Под ключ
-                </label>
-                <label>
-                  <input type="checkbox" name="example" />
-                  Под отделку
-                </label>
+              <div className="materials-single-text">БЛОЧНЫЕ</div>
+              <div className="materials-single-type d-flex flex-column">
+              <CustomCheckbox text="Под ключ" />
+              <CustomCheckbox text="Под отделку" />
               </div>
+              
             </div>
           </div>
         </div>
