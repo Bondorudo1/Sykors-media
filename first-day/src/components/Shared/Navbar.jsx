@@ -1,13 +1,16 @@
 import Logo from "../Header/Logo";
-import "./Navbar.css";
 import menuIcon from "/icons/icons-menu.svg";
 
 function Navbar() {
   return (
     <>
+      {/* Navbar Section */}
       <nav className="navbar navbar-expand-lg navbar-light bg-white px-2">
         <div className="container-fluid px-0">
+          {/* Logo Section */}
           <Logo />
+
+          {/* Toggler Button */}
           <button
             className="navbar-toggler"
             style={{ border: "none" }}
@@ -20,7 +23,12 @@ function Navbar() {
           >
             <img src={menuIcon} alt="Menu" className="navbar-icon" />
           </button>
-          <div className="collapse navbar-collapse " id="navbarSupportedContent">
+
+          {/* Navbar Links */}
+          <div
+            className="collapse navbar-collapse "
+            id="navbarSupportedContent"
+          >
             <ul className="navbar-nav ms-auto mb-2 mb-lg-0">
               <li className="nav-item">
                 <a className="nav-link" href="#">

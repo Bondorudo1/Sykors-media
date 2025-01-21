@@ -12,7 +12,7 @@
   display: inline-block;
   width: 20px;
   height: 20px;
-  border: 2px solid var(--primary-color);
+  border: 2px solid #ae3429c9;
   border-radius: 4px;
   position: relative;
 }
@@ -21,7 +21,7 @@
   content: "";
   width: 7px;
   height: 12px;
-  border: solid var(--primary-color);
+  border: solid #ae3429c9;
   border-width: 0 2px 2px 0;
   transform: rotate(45deg);
   position: absolute;

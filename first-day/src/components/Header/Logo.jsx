@@ -13,7 +13,7 @@ function Logo() {
       <img
         src={companyName}
         alt="Company"
-        className="img-fluid ms-2" // Adds margin to the left for spacing
+        className="img-fluid ms-2" 
         style={{ height: "25px" }}
       />
     </div>
